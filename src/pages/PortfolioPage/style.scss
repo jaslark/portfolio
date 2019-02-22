@@ -1,0 +1,71 @@
+@import 'breakpoints';
+
+#portfolio-page {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint-small-down {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .content-grid {
+    flex: auto;
+  }
+
+  .about-wrapper {
+
+    .about-content {
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+
+      @include breakpoint-small-down {
+        font-size: 1rem;
+      }
+
+      p {
+        font-weight: 300;
+        padding: 0.5rem 0;
+      }
+
+      .text-emoji {
+        padding: 2rem 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+.tabs {
+  margin-top: 75px;
+}
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  padding: 0 40px;
+  margin: 0 25px 0 0;
+}
+
+.tab-list-active {
+  background-color: #00A1A7;
+  border: solid #00A1A7;
+  border-width: 1px 1px 0 1px;
+  color: white;
+}

@@ -1,0 +1,103 @@
+@import 'breakpoints';
+
+#about-page {
+  padding-top: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  justify-content: center;
+  @include breakpoint-small-down {
+    padding-top: 3rem;
+  }
+
+  h1 {
+    padding: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .content-grid {
+    flex: auto;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-50-gt-sm {
+    display: block;
+  }
+
+  .flex-50-gt-sm {
+    -webkit-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    max-width: 50%;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .animated.slide-in-left {
+    animation: slideInLeft 0.75s ease both;
+  }
+
+  .animated.slide-in-right {
+    animation: slideInRight 0.75s ease both;
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .bars-wrap {
+    margin: 0;
+    width: calc(100% - 15px);
+    max-width: 90%;
+  }
+
+  .skills-wrapper {
+    margin: 50px 0 0;
+    align-items: flex-start;
+    width: 100%;
+    flex-direction: row;
+
+    > .flex:first-child {
+      padding: 0 50px;
+    }
+
+    .avatar {
+      width: 155px;
+      margin: 20px 0 15px;
+    }
+
+    .text-intro {
+      font-size: 12pt;
+      line-height: 18pt;
+    }
+  }
+}

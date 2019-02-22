@@ -1,0 +1,36 @@
+
+  .bar {
+    max-width: 90%;
+    height: 28px;
+    margin: 0 0 15px;
+    font-size: 11pt;
+    align-items: flex-end;
+    position: relative;
+    background-color: #eee;
+    color: #666;
+
+    .fill {
+      transition: 1.1s 0.2s width ease-in-out;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #00A1A7;
+      padding: 0;
+      opacity: 1;
+    }
+
+    .tag {
+      top: 0;
+      left: 0;
+      position: absolute;
+      background-color: #04C2C9;
+      color: #fff;
+      width: 110px;
+      height: 100%;
+    }
+
+    span {
+      z-index: 1;
+      padding: 0 15px 0 0;
+    }
+  }
