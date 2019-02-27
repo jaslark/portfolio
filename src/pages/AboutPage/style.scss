@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .flex-50-gt-sm {
@@ -96,8 +96,8 @@
     }
 
     .text-intro {
-      font-size: 12pt;
-      line-height: 18pt;
+      font-size: 13pt;
+      line-height: 20pt;
     }
   }
 }

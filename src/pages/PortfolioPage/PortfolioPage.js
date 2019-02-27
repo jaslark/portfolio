@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ScrollToNext from '@components/ScrollToNext';
 import Tabs from '@components/Tabs';
+import PortfolioItem from '@components/PortfolioItem';
+import portfolioItems from './portfolio-items-data';
 
 import './style.scss';
 
@@ -17,13 +19,25 @@ const PortfolioPage = (props, context) => {
 
           <Tabs>
             <div label="All">
-              See ya later, <em>Alligator</em>!
+              <div className="portfolio-wrapper">
+                {portfolioItems[0].first.map((item, i) => (
+                  <PortfolioItem render={item} key={i} />
+                ))}
+              </div>
             </div>
             <div label="Node.js">
-              After &apos;while, <em>Crocodile</em>!
+              <div className="portfolio-wrapper">
+                {portfolioItems[1].second.map((item, i) => (
+                  <PortfolioItem render={item} key={i} />
+                ))}
+              </div>
             </div>
             <div label="Angular">
-              Nothing to see here, this tab is <em>extinct</em>!
+              <div className="portfolio-wrapper">
+                {portfolioItems[2].third.map((item, i) => (
+                  <PortfolioItem render={item} key={i} />
+                ))}
+              </div>
             </div>
           </Tabs>
 

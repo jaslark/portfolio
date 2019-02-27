@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ScrollToNext from '@components/ScrollToNext';
 import BarSkill from '@components/BarSkill';
-import ProfilePic from '../../images/my_avatar.jpg';
+import ProfilePic from '../../images/avatar_1.jpg';
 import './style.scss';
 
 const AboutPage = (props, context) => {
