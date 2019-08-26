@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ScrollToNext from '@components/ScrollToNext';
+// import ScrollToNext from '@components/ScrollToNext';
 import Tabs from '@components/Tabs';
 import PortfolioItem from '@components/PortfolioItem';
 import portfolioItems from './portfolio-items-data';
@@ -9,7 +9,7 @@ import './style.scss';
 
 const PortfolioPage = (props, context) => {
   const {
-    theme: { name, color, background }
+    theme: { color, background }
   } = context;
 
   return (

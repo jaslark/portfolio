@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import './style';
 
 const PortfolioItem = (props, context) => {
-  const { theme: { background, color } } = context;
+  // const { theme: { background, color } } = context;
 
   const data = props.render;
-  console.log(props);
     return (
       <div className="portfolio-item">
         <div className="portfolio-item__title">{data.title}</div>
@@ -22,8 +21,5 @@ const PortfolioItem = (props, context) => {
     );
 };
 
-PortfolioItem.contextTypes = {
-  theme: PropTypes.any
-};
 
 export default PortfolioItem;

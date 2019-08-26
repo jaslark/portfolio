@@ -27,9 +27,9 @@ class Tab extends Component {
 }
 
 Tab.contextTypes = {
-  activeTab: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired
+  activeTab: PropTypes.any,
+  label: PropTypes.any,
+  onClick: PropTypes.func
 }
 
 export default Tab;

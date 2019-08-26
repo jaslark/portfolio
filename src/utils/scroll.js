@@ -20,7 +20,7 @@ export const toElement = (element) => {
         block: 'start'
       })
     } else {
-      element.scrollIntoView
+      // element.scrollIntoView
     }
   }
 };

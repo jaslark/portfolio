@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ScrollToNext from '@components/ScrollToNext';
 import BarSkill from '@components/BarSkill';
-import ProfilePic from '../../images/avatar_1.jpg';
+import ProfilePic from '../../images/avatar_2.jpg';
 import './style.scss';
 
 const AboutPage = (props, context) => {
   const {
-    theme: { name, color, background }
+    theme: { color, background }
   } = context;
 
   return (
@@ -17,7 +17,7 @@ const AboutPage = (props, context) => {
 
           <div className="skills-wrapper flex row-gt-sm">
                   <div className="flex flex-50-gt-sm waypoint animated slide-in-left text-center" data-animation="slide-in-left">
-                    <img src={ProfilePic} className="avatar"/>
+                    <img src={ProfilePic} className="avatar" alt=""/>
                     <div className="text-intro">
                       I'm the Front-End Developer for EyeCue Lab in Portland, OR.
                       <br/>

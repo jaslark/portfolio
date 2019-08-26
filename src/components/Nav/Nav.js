@@ -16,7 +16,7 @@ class Nav extends Component {
   }
 
   handleScroll() {
-    const scrollPos = window.scrollY;
+    // const scrollPos = window.scrollY;
     const header = document.querySelectorAll('.page');
     header.forEach(function(el) {
     });
@@ -48,7 +48,7 @@ class Nav extends Component {
 
   render() {
     const {
-      theme: { name, color, background },
+      theme: { color },
       switchTheme
     } = this.context;
     let moon = this.context.theme.name === 'night' ? 'show' : 'hide';

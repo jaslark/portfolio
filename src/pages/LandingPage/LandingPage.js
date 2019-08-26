@@ -8,7 +8,7 @@ import './style.scss';
 
 
 const LandingPage = (props, context) => {
-  const { theme: { name, color, background } } = context;
+  const { theme: { color, background } } = context;
 
 
   return (

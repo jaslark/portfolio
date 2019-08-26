@@ -9,10 +9,12 @@ class ThemeSwitcher extends Component {
     super(props);
     const allThemes = getThemes();
     const firstTimeThemes = allThemes;
+    const currentTime = new Date();
 
+    console.log(currentTime.getHours());
 
     this.state = {
-      theme: firstTimeThemes[0]
+      theme: currentTime.getHours() < 18 ? firstTimeThemes[1] : firstTimeThemes[0]
     }
 
     this.switchTheme = this.switchTheme.bind(this);
@@ -30,10 +32,10 @@ class ThemeSwitcher extends Component {
     const allThemes = getThemes();
     const themesWithoutCurrentTheme = allThemes;
 
-    if (currentTheme.name == 'night') {
+    if (currentTheme.name === 'night') {
       return themesWithoutCurrentTheme[1];
     } else {
-      return themesWithoutCurrentTheme[0];      
+      return themesWithoutCurrentTheme[0];
     }
   }
 
@@ -46,7 +48,7 @@ class ThemeSwitcher extends Component {
 
   render() {
     const { children } = this.props;
-    const theme = this.state.theme;
+    // const theme = this.state.theme;
 
     return (
       <div className="theme-switcher">

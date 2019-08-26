@@ -101,7 +101,13 @@
   }
 
   &:hover {
-    box-shadow: 0 6px 12px 0 rgba(229, 232, 22, 0.2);
+    box-shadow: 0 6px 12px 0 rgba(238, 239, 231, 0.2);
+    background: #eee;
+    color: #666;
+
+      a {
+        color: #666;
+      }
   }
 
   &__title {

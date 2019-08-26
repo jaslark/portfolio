@@ -17,7 +17,6 @@ class Tabs extends Component {
   }
 
   render() {
-
     const { onClickTabItem, props: { children }, state: { activeTab } } = this;
 
     return (
@@ -51,7 +50,7 @@ class Tabs extends Component {
 
 
 Tabs.contextTypes = {
-  children: PropTypes.instanceOf(Array).isRequired
+  children: PropTypes.any
 }
 
 export default Tabs;

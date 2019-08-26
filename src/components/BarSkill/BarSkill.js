@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 import './style.scss';
 
@@ -41,7 +41,7 @@ class BarSkill extends Component {
     return (
       <div>
           { menuItems.map((item, i) =>
-            <div className="bar flex">
+            <div className="bar flex" key={i}>
               <div className="bar fill" style={{width: item.width}}>
                 <div className="tag bold flex">{item.name}</div>
               </div>
